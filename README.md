@@ -22,3 +22,21 @@ auto-sklearn.ipynb: build models with auto-sklearn
 results:
 
 Experiment results related to the paper can be found here.
+
+requirement:
+
+for freecad:
+Python                   3.8.10
+sklearn                  0.0.post5
+joblib                   1.2.0
+pandas                   2.0.2
+numpy                    1.24.3
+pyDOE                    0.3.8
+pyDOE2                   1.3.0
+GPy                      1.12.0
+
+for auto-sklearn:
+with WSL for linux: 
+ubuntu                   22.04.1
+Python                   3.10.6
+auto-sklearn             0.15.0
