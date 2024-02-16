@@ -3,7 +3,7 @@ Repository for the paper "Small Dataset Acquisition for Machine Learning Analysi
 
 This GitHub repository contains the data and code used for the paper "Small Dataset Acquisition for Machine Learning Analysis with Possible Uncertainties".
 
-example_data:
+# example_data:
 
 here you can find some training data, generated with different DOE strategies. Using Minitab to get the D-optimal of a specific dataset
 
@@ -12,21 +12,25 @@ All the training datasets here are without uncertainty. Run the uncertainty_gene
 A test dataset with 2500 data points is given as an example. With testdata_generation.py you can generate other test datasets.
 
 
-code:
+# code:
 
 relevant Python scripts / Jupyter notebooks for data generation, model training, and others.
 
 Python freecad API scripts for running simulations are stored in code/freecad. The simulation results are exported and the corresponding training dataset and test set are constructed.
+
+Workflow:
+  1. generate training datasets (different sampling strategies) with traindata_generation.ipynb
+  2. generate test dataset for evaluation with testdata_generation.py
+  3. with model_generation.ipynb the models can be trained with Auto-sklearn. A test dataset and the training datasets have to be specified.
 
 Tips:
 normal.py: data normalization 
 
 Freecad_fem.txt for building the FEM simulation in freecad with Python console.
 
-auto-sklearn.ipynb: build models with auto-sklearn
 
 
-results:
+# results:
 
 Experiment results related to the paper can be found here.
 
