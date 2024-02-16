@@ -6,18 +6,25 @@ This GitHub repository contains the data and code used for the paper "Small Data
 example_data:
 
 here you can find some training data, generated with different DOE strategies. Using Minitab to get the D-optimal of a specific dataset
+
 All the training datasets here are without uncertainty. Run the uncertainty_generation.ipynb to build datasets with uncertainties. For Emukit use emu_integratednoise.ipynb.
+
 A test dataset with 2500 data points is given as an example. With testdata_generation.py you can generate other test datasets.
 
 
 code:
 
 relevant Python scripts / Jupyter notebooks for data generation, model training, and others.
-Python freecad API scripts for data import&export are stored in the freecad folder.
+
+Python freecad API scripts for running simulations are stored in code/freecad. The simulation results are exported and the corresponding training dataset and test set are constructed.
+
 Tips:
 normal.py: data normalization 
+
 Freecad_fem.txt for building the FEM simulation in freecad with Python console.
+
 auto-sklearn.ipynb: build models with auto-sklearn
+
 
 results:
 
